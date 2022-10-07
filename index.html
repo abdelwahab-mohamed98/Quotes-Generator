@@ -14,8 +14,29 @@
       <h1 class="fw-bolder mb-3">Quote of the Day</h1>
       <p class="lead mb-5">Press the button below to recieve a random quote!</p>
       <button class="btn btn-outline-dark btn-lg mb-5" onclick="newQuotes()">New Quote</button>
-      <h2 id="quote-display" class="mb-3"></h2>
-      <h3 id="author-display" class="mb-3"></h3>
+      <h3 id="quote-display" class="mb-3"></h3>
+      <h4 id="author-display" class="mb-5"></h4>
+
+      <h2 class="by-5">Add Your Quote</h2>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="add-new-quote">
+            <label for="add-new-quote">Quote</label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="add-new-author">
+            <label for="add-new-author">Author</label>
+          </div>
+        </div>
+        <button class="btn btn-outline-dark btn-lg mb-5" onclick="addingNewQuote()">Add New Quote</button>
+        <div id="added">
+          
+        </div>
+
+      </div>
     </div>
   </section>
   <script src="js/bootstrap.bundle.min.js"></script>
